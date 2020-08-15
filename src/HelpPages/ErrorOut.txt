@@ -1,0 +1,22 @@
+Something is wrong!
+
+Usage: ./diff [Options] file1 [Options] file2 [Output Options]
+
+-help                    More details and documentation about the Diff tool
+-h                       Same as -help
+-ignore "text"           Ignores text within quotations in file
+-ig "text"               Same as -ignore "text"
+-w                       Removes Whitespaces except for paragraphs
+-u                       Ignores urls
+-equal "text1" "text2"   text2 will be treated the same as text1 in the same file only
+-eq "text1" "text2"      Same as -equal "text1" "text2"
+-r                       Recursive mode to go through Directories inside the directory being compared
+-out=binary              Compares files in Binary
+-out=bin                 Same as -out=binary
+
+
+For More Details use -help.
+
+tool examples:
+./diff -ig "Spaghetti Code" file1 -eq "I hate Progtest" "I love Progtest" file2 -out=binary
+

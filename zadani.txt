@@ -1,0 +1,25 @@
+Extended diff-tool
+
+Create a program similar to UNIX diff command. Implement the following features:
+
+tool adjusts its output based on given input file types
+output type can be set explicitly (e.g. HTML file can be compared in a binary mode)
+supports at least 3 different file types
+tool is able to compare entire directories (both files and directories content)
+supports at least 2 arguments for at least 1 file type (e.g. what is to be ignored, allows to define equivalent expressions)
+File types examples:
+
+binary file - compares bytes
+text file - compares textual representation, ignores whitespaces, does not ignore paragraphs
+HTML - ignores attributes order
+JSON - ignores data order
+C source file - attempts to map variable and function names (e.g. based on the order of their calls, definitions)
+picture - the result could be a picture with average of both
+Optional: the tool can compare two different file types on the meaning level: HTML vs. Markdown, directory vs. compressed archive
+
+Where polymorphism is to be used? (recommended)
+
+Different kinds of output: textual (every difference on a single line), differences recorded in a file, new file with marked differences
+File types: binary, textual, Markdown, HTML, JSON, XML, source code etc.
+Comparison parameters: ignoring whitespaces, equivalent expressions, ignoring base URL in links
+

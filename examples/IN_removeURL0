@@ -1,0 +1,10 @@
+This is a url text test file:
+
+https://google.com
+
+cool looks like it works http://ydsa.asd.co will also be removed 
+
+edge cases:
+htt://asdas.com
+
+ttp://assda.com will be included
