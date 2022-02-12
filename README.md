@@ -1,41 +1,25 @@
-`Note:` This was my Programming and Algorithims semester project, the idea was to replicate the unix diff tool and add extra features documented below.
+# diff tool
+
+This was my Programming and Algorithims semester project, the idea was to replicate the unix diff tool and add extra features documented below.
 
 Feel free to use/extend this project. However, please do not use it for any submissions school/university related, thanks.  
 
+```
+Welcome to the Diff command tool, a new and refined way to compare your Directories/Files!
+Usage: ./diff [Options] file1 [Options] file2 [Output Option]
 
-Welcome to the Diff command tool, a new and refined way to compare your Directories/Files!<br>
-> Usage: ./diff [Options] file1 [Options] file2 [Output Option]
->
->-ignore "text"
-&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; 
-Ignores text within quotations in file<br>
--ig "text"
-&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;&nbsp;
-Same as -ignore "text"<br>
--w
-&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;&ensp;
-Removes Whitespaces except for paragraphs<br>
--u
-&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;
-Ignores urls<br>
--equal "text1" "text2"
-&ensp; &ensp; &ensp; &ensp; &ensp; &ensp;
-text2 will be treated the same as text1 in the same file only<br>
--eq "text1" "text2"
-&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &nbsp; &nbsp;&nbsp;
-Same as -equal "text1" "text2"<br>
--r
-&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &nbsp; &nbsp;
-Recursive mode to go through Directories inside the directory being compared<br>
--out=binary
-&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp;
-Compares files in Binary<br>
--out=bin
-&ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &ensp; &nbsp;
-Same as -out=binary
+-ignore "text"           Ignores text within quotations in file
+-ig "text"               Same as -ignore "text"
+-w                       Removes Whitespaces except for paragraphs
+-u                       Ignores urls
+-equal "text1" "text2"   text2 will be treated the same as text1 in the same file only
+-eq "text1" "text2"      Same as -equal "text1" "text2"
+-r                       Recursive mode to go through Directories inside the directory being compared
+-out=binary              Compares files in Binary
+-out=bin                 Same as -out=binary
 
 
-## How The Program Works:
+How The Program Works:
 * If you inserted two different file types, they will be automatically compared in binary mode.
 
 * File types supported are:
@@ -56,15 +40,13 @@ Same as -out=binary
   of it as a small sed program as well.
 
 
-> tool example:<br>
-> ./diff -ig "Spaghetti Code" file1 -eq "I hate Progtest" "I love Progtest" file2 -out=binary
+tool examples:
+./diff -ig "Spaghetti Code" file1 -eq "I hate Progtest" "I love Progtest" file2 -out=binary
 
 
 Program Output:
-
-    If there is a difference, it reports it. If not, nothing will be outputed.
-    
-    output examples:
+    - If there is a difference, it reports it. If not, nothing will be outputed.
+    - output examples:
         + 1a2
           < abc
           * This means after line 1 in file1, add "abc" to be equal to file2 till line 2.
@@ -81,3 +63,4 @@ Program Output:
 Good Luck... you will need it! :) (This message was stated for Mark, and not the user of course!)
 
 ~ Created by Mark © 2019
+```
